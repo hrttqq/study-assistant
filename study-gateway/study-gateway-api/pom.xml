@@ -4,16 +4,11 @@
 
     <parent>
         <groupId>com.study</groupId>
-        <artifactId>study-assistant-cloud</artifactId>
+        <artifactId>study-gateway</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>study-user</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>study-user-api</module>
-        <module>study-user-service</module>
-    </modules>
+    <artifactId>study-gateway-api</artifactId>
+    <packaging>jar</packaging>
 </project>
