@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <groupId>com.study</groupId>
+    <artifactId>study-assistant</artifactId>
+    <version>1.0.0</version>
+
+    <!-- 父工程必须 -->
+    <packaging>pom</packaging>
+
+
+    <modules>
+
+        <module>study-gateway</module>
+        <module>study-auth</module>
+        <module>study-user</module>
+        <module>study-ai</module>
+        <module>study-common</module>
+
+    </modules>
+
+
+    <properties>
+
+        <java.version>17</java.version>
+
+        <spring.boot.version>3.3.0</spring.boot.version>
+
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
+    </properties>
+
+
+</project>
