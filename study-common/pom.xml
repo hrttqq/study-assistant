@@ -4,7 +4,7 @@
 
     <parent>
         <groupId>com.study</groupId>
-        <artifactId>study-assistant</artifactId>
+        <artifactId>study-assistant-cloud</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>

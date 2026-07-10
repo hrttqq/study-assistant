@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0">
-
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.0</version>
+
+    </parent>
 
 
     <groupId>com.study</groupId>
-    <artifactId>study-assistant</artifactId>
+    <artifactId>study-assistant-cloud</artifactId>
     <version>1.0.0</version>
 
-    <!-- 父工程必须 -->
+    <!-- Parent aggregator project -->
     <packaging>pom</packaging>
 
 
@@ -22,6 +29,23 @@
         <module>study-common</module>
 
     </modules>
+
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2023.0.3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
 
 
     <properties>

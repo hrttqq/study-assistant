@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: study-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: study-auth
+          uri: http://localhost:8081
+          predicates:
+            - Path=/auth/**
+        - id: study-user
+          uri: http://localhost:8082
+          predicates:
+            - Path=/users/**
+        - id: study-ai
+          uri: http://localhost:8083
+          predicates:
+            - Path=/ai/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
