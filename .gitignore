@@ -17,6 +17,7 @@ Desktop.ini
 .env.*
 !.env.example
 *.local
+**/application-local.yml
 
 # Logs
 logs/

@@ -22,11 +22,15 @@
 
     <modules>
 
+        <module>study-common</module>
         <module>study-gateway</module>
         <module>study-auth</module>
         <module>study-user</module>
         <module>study-ai</module>
-        <module>study-common</module>
+        <module>study-plan</module>
+        <module>study-file</module>
+        <module>study-notification</module>
+        <module>study-member</module>
 
     </modules>
 

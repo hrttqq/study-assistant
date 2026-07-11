@@ -3,15 +3,25 @@ package com.study.user.service.controller;
 import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import com.study.user.api.UserApi;
+import com.study.user.service.entity.UserEntity;
+import com.study.user.service.mapper.UserMapper;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
+import java.util.LinkedHashMap;
 
 @RestController
 @RequestMapping("/users")
 public class UserController implements UserApi {
+
+    private final UserMapper userMapper;
+
+    public UserController(UserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
 
     @Override
     @GetMapping("/health")
@@ -27,5 +37,21 @@ public class UserController implements UserApi {
                 "username", "demo-user",
                 "nickname", "Demo User"
         ));
+    }
+
+    @Override
+    @GetMapping("/{id}")
+    public ApiResponse<Map<String, Object>> getUserById(@PathVariable Long id) {
+        UserEntity user = userMapper.selectById(id);
+        if (user == null) {
+            return ApiResponse.fail(404, "user not found");
+        }
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("id", user.getId());
+        result.put("username", user.getUsername());
+        result.put("nickname", user.getNickname());
+        result.put("email", user.getEmail());
+        result.put("memberLevel", user.getMemberLevel());
+        return ApiResponse.success(result);
     }
 }

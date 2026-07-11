@@ -9,4 +9,6 @@ public interface UserApi {
     ApiResponse<Map<String, String>> health();
 
     ApiResponse<Map<String, Object>> currentUser();
+
+    ApiResponse<Map<String, Object>> getUserById(Long id);
 }

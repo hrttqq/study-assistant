@@ -1,0 +1,12 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: study-plan
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

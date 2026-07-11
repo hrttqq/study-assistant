@@ -19,6 +19,22 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/ai/**
+        - id: study-plan
+          uri: http://localhost:8084
+          predicates:
+            - Path=/plans/**,/tasks/**,/checkins/**
+        - id: study-file
+          uri: http://localhost:8085
+          predicates:
+            - Path=/files/**
+        - id: study-notification
+          uri: http://localhost:8086
+          predicates:
+            - Path=/notifications/**
+        - id: study-member
+          uri: http://localhost:8087
+          predicates:
+            - Path=/memberships/**
 
 management:
   endpoints:
