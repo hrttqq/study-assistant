@@ -8,4 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserMapper extends BaseMapper<UserEntity> {
 
     UserEntity findByUsername(String username);
+
+    UserEntity findByWxOpenId(String openId);
 }

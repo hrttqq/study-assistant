@@ -10,6 +10,7 @@ public final class ServiceNames {
     public static final String FILE = "study-file";
     public static final String NOTIFICATION = "study-notification";
     public static final String MEMBER = "study-member";
+    public static final String WX = "study-wx";
 
     private ServiceNames() {
     }

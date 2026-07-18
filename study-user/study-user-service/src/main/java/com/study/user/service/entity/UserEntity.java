@@ -13,6 +13,9 @@ public class UserEntity {
     private String nickname;
     private String email;
     private String memberLevel;
+    private String wxOpenId;
+    private String wxUnionId;
+    private String avatarUrl;
 
     public Long getId() {
         return id;
@@ -52,5 +55,29 @@ public class UserEntity {
 
     public void setMemberLevel(String memberLevel) {
         this.memberLevel = memberLevel;
+    }
+
+    public String getWxOpenId() {
+        return wxOpenId;
+    }
+
+    public void setWxOpenId(String wxOpenId) {
+        this.wxOpenId = wxOpenId;
+    }
+
+    public String getWxUnionId() {
+        return wxUnionId;
+    }
+
+    public void setWxUnionId(String wxUnionId) {
+        this.wxUnionId = wxUnionId;
+    }
+
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
+
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 }
