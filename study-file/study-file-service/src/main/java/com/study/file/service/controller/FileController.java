@@ -1,6 +1,5 @@
 package com.study.file.service.controller;
 
-import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import com.study.file.api.FileApi;
 import com.study.file.api.dto.MaterialUploadRequest;

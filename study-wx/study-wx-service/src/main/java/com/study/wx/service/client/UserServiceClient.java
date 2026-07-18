@@ -1,6 +1,5 @@
 package com.study.wx.service.client;
 
-import com.study.common.core.ApiResponse;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;

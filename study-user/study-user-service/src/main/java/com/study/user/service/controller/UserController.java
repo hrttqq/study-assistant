@@ -1,6 +1,5 @@
 package com.study.user.service.controller;
 
-import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import com.study.user.api.UserApi;
 import com.study.user.api.dto.WxUserLoginRequest;

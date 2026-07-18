@@ -1,6 +1,5 @@
 package com.study.plan.api;
 
-import com.study.common.core.ApiResponse;
 import com.study.plan.api.dto.CheckInRequest;
 import com.study.plan.api.dto.ExamPlanCreateRequest;
 

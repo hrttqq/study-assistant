@@ -1,6 +1,5 @@
 package com.study.member.service.controller;
 
-import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import com.study.member.api.MemberApi;
 import com.study.member.api.dto.UpgradeRequest;

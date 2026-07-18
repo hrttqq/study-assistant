@@ -1,6 +1,5 @@
 package com.study.plan.service.controller;
 
-import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import com.study.plan.api.PlanApi;
 import com.study.plan.api.dto.CheckInRequest;

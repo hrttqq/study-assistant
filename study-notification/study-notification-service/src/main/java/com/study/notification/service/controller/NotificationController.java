@@ -1,6 +1,5 @@
 package com.study.notification.service.controller;
 
-import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import com.study.notification.api.NotificationApi;
 import com.study.notification.api.dto.ReminderCreateRequest;

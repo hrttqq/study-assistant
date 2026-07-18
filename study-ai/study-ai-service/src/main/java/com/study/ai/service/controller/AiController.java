@@ -4,7 +4,6 @@ import com.study.ai.api.AiApi;
 import com.study.ai.api.dto.ChatRequest;
 import com.study.ai.api.dto.PlanGenerateRequest;
 import com.study.ai.api.dto.SummarizeRequest;
-import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

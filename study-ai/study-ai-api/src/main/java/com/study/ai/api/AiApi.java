@@ -3,7 +3,6 @@ package com.study.ai.api;
 import com.study.ai.api.dto.ChatRequest;
 import com.study.ai.api.dto.PlanGenerateRequest;
 import com.study.ai.api.dto.SummarizeRequest;
-import com.study.common.core.ApiResponse;
 
 import java.util.Map;
 

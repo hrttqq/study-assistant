@@ -1,6 +1,5 @@
 package com.study.notification.api;
 
-import com.study.common.core.ApiResponse;
 import com.study.notification.api.dto.ReminderCreateRequest;
 
 import java.util.List;

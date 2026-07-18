@@ -3,7 +3,6 @@ package com.study.auth.service.controller;
 import com.study.auth.api.AuthApi;
 import com.study.auth.api.dto.LoginRequest;
 import com.study.auth.api.dto.RegisterRequest;
-import com.study.common.core.ApiResponse;
 import com.study.common.core.ServiceNames;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

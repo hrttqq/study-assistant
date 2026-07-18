@@ -1,6 +1,5 @@
 package com.study.member.api;
 
-import com.study.common.core.ApiResponse;
 import com.study.member.api.dto.UpgradeRequest;
 
 import java.util.List;
